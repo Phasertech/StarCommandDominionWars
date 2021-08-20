@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="6a9f-f14e-6d00-b473" name="2372 - Cardassian Union" revision="1" battleScribeVersion="2.03" authorName="Thomas McWay-Wozencraft" library="false" gameSystemId="7f04-37b4-1aa9-44d7" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Rudimentary fleet rules in place.</readme>
+  <costTypes>
+    <costType id="c425-a2d1-bea1-90f5" name=" Maquis Vessels" defaultCostLimit="-1.0" hidden="true"/>
+  </costTypes>
+  <forceEntries>
+    <forceEntry id="371e-c693-e4b9-5735" name="Union Defense Fleet" hidden="false">
+      <constraints>
+        <constraint field="4bd3-4e01-737b-5f55" scope="371e-c693-e4b9-5735" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d877-d9b3-ed00-7769" type="max"/>
+        <constraint field="c425-a2d1-bea1-90f5" scope="371e-c693-e4b9-5735" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b72-212e-2236-fecc" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a384-368f-9654-76f5" name="Squadron" hidden="false" targetId="6f55-30dd-f5a1-bd94" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d199-4756-7dce-121d" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink id="715b-47dd-4aa3-d78c" name="C001 Keldon Command Group" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true" targetId="b13b-51b2-6eea-cf6e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e675-a131-98b0-0cc7" name="Squadron" hidden="false" targetId="6f55-30dd-f5a1-bd94" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="da56-b6f5-bb81-0eb0" name="C002 Galor Command Group" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true" targetId="fab8-d445-0261-a085" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4127-a8f5-a9d7-ddc9" name="Squadron" hidden="false" targetId="6f55-30dd-f5a1-bd94" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="2fd1-e8d5-03f3-1e33" name="CF002 Hideki Class" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1757-7d7a-d2bb-86d3" name="CF002 Hideki Attack Ship Flight" hidden="false" typeId="acea-0d61-6fce-95dd" typeName="Fleet Ship">
+          <characteristics>
+            <characteristic name="FPV" typeId="9722-673d-f4c8-90cb">8</characteristic>
+            <characteristic name="Hull" typeId="30e5-8457-0f9b-1171">3</characteristic>
+            <characteristic name="Speed" typeId="1a82-bb21-c9be-ba7a">4</characteristic>
+            <characteristic name="Primary" typeId="7e65-134e-af94-ac91">B</characteristic>
+            <characteristic name="Anti-Fleet" typeId="a398-d1c7-fb65-0b7d">BBB</characteristic>
+            <characteristic name="Keywords" typeId="4ee2-6a1d-0143-7175">Swarm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9d56-f940-dff3-cd4a" name="Swarm" hidden="false" targetId="e8e0-e58e-dfb9-280b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="53f1-7d9f-ce05-4768" name="Fleet" hidden="false" targetId="6aca-d485-4bab-c1e3" primary="false"/>
+        <categoryLink id="a265-0751-74a8-cb95" name="Frigate" hidden="false" targetId="777b-69d1-0673-ebf6" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="8.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="1.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+        <cost name=" Maquis Vessels" typeId="c425-a2d1-bea1-90f5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b13b-51b2-6eea-cf6e" name="C001 Keldon Command Group" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="acb1-50b6-114e-e63c" name="Keldon Command Group" hidden="false" collective="false" import="true" targetId="7245-4c23-1838-1763" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="0.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+        <cost name=" Maquis Vessels" typeId="c425-a2d1-bea1-90f5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9b4e-63e8-7786-6caa" name="CF001 Galor Type-1" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2824-a417-afed-e0bd" name="CF001 Galor Type-1 Heavy Destroyer" publicationId="d568-6405-711b-fe39" hidden="false" typeId="acea-0d61-6fce-95dd" typeName="Fleet Ship">
+          <characteristics>
+            <characteristic name="FPV" typeId="9722-673d-f4c8-90cb">15</characteristic>
+            <characteristic name="Hull" typeId="30e5-8457-0f9b-1171">7</characteristic>
+            <characteristic name="Speed" typeId="1a82-bb21-c9be-ba7a">2</characteristic>
+            <characteristic name="Primary" typeId="7e65-134e-af94-ac91">B</characteristic>
+            <characteristic name="Anti-Fleet" typeId="a398-d1c7-fb65-0b7d">BBKK</characteristic>
+            <characteristic name="Keywords" typeId="4ee2-6a1d-0143-7175">Grit, Heavy, Rogue</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0f23-5895-471d-ed09" name="Heavy" hidden="false" targetId="072c-ed85-2076-7b9d" type="profile"/>
+        <infoLink id="90f2-98c0-23f0-ea04" name="Grit" hidden="false" targetId="555b-424c-50d9-21a3" type="profile"/>
+        <infoLink id="a710-4e08-bdf5-0967" name="Rogue" hidden="false" targetId="41da-6832-7da2-605e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5694-6f6d-5615-8a07" name="Destroyer" hidden="false" targetId="d99d-6a05-8fe9-71a1" primary="true"/>
+        <categoryLink id="3b59-f3af-56bf-f908" name="Fleet" hidden="false" targetId="6aca-d485-4bab-c1e3" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="15.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="2.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+        <cost name=" Maquis Vessels" typeId="c425-a2d1-bea1-90f5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ff5b-04f3-67cf-ffbb" name="CF003 Norin" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="60c9-a86e-1ea4-166e" name="CF003 Norin Tactical Cruiser" publicationId="d568-6405-711b-fe39" hidden="false" typeId="acea-0d61-6fce-95dd" typeName="Fleet Ship">
+          <characteristics>
+            <characteristic name="FPV" typeId="9722-673d-f4c8-90cb">15</characteristic>
+            <characteristic name="Hull" typeId="30e5-8457-0f9b-1171">5</characteristic>
+            <characteristic name="Speed" typeId="1a82-bb21-c9be-ba7a">4</characteristic>
+            <characteristic name="Primary" typeId="7e65-134e-af94-ac91">R</characteristic>
+            <characteristic name="Anti-Fleet" typeId="a398-d1c7-fb65-0b7d">BBBB</characteristic>
+            <characteristic name="Keywords" typeId="4ee2-6a1d-0143-7175">Grit, Heavy, Rogue</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f751-556e-c229-74f9" name="Snipe 3" hidden="false" targetId="7d8c-627b-4d90-d653" type="profile"/>
+        <infoLink id="d088-ace8-10a5-9309" name="Bomber" hidden="false" targetId="0ac9-ae21-12d0-04c4" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4f7e-066d-297e-ec69" name="Destroyer" hidden="false" targetId="d99d-6a05-8fe9-71a1" primary="true"/>
+        <categoryLink id="904f-5ca5-e608-51fc" name="Fleet" hidden="false" targetId="6aca-d485-4bab-c1e3" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="15.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="2.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+        <cost name=" Maquis Vessels" typeId="c425-a2d1-bea1-90f5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a48-c6ec-87bb-8a5b" name="CF004 Groumall" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="eaad-7e42-78c3-1e14" name="CF004 Groumall Fleet Tender" publicationId="d568-6405-711b-fe39" hidden="false" typeId="9247-a0c9-28c2-9bb6" typeName="Fleet Ship - Advanced">
+          <characteristics>
+            <characteristic name="FPV" typeId="4aa2-397f-6c37-396a">20</characteristic>
+            <characteristic name="Hull" typeId="ce6c-5901-d614-10b0">6</characteristic>
+            <characteristic name="Speed" typeId="c3b7-76a1-f267-6678">3</characteristic>
+            <characteristic name="Primary" typeId="45b6-243e-a701-6ed9">B</characteristic>
+            <characteristic name="Anti-Fleet" typeId="4e8c-eac2-01bf-5679">KK</characteristic>
+            <characteristic name="Keywords" typeId="7fd8-4f0b-fd4e-35f7">Heavy, Relay</characteristic>
+            <characteristic name="Def. Tokens" typeId="2073-d890-2741-05dc">2x Brace</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f4ed-744c-b1db-787b" name="Groumall - Field Command" publicationId="d568-6405-711b-fe39" hidden="false">
+          <description>During your Activation, instead of attacking you may choose 1 friendly Fleet ship at distance 0-2. That ship may perform an attack (even if it has already activated).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="e054-df92-88bc-85ec" name="Relay" hidden="false" targetId="cb6d-47d1-b702-f3a7" type="profile"/>
+        <infoLink id="8085-e3d8-3217-6325" name="Heavy" hidden="false" targetId="072c-ed85-2076-7b9d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2e4c-19b0-37e4-45e9" name="Fleet" hidden="false" targetId="6aca-d485-4bab-c1e3" primary="false"/>
+        <categoryLink id="4f24-acc5-eb9f-d6f2" name="Frigate" hidden="false" targetId="777b-69d1-0673-ebf6" primary="true"/>
+        <categoryLink id="9590-1de7-94d5-84b6" name="Advanced" hidden="false" targetId="3c88-532f-892c-b329" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="20.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="2.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+        <cost name=" Maquis Vessels" typeId="c425-a2d1-bea1-90f5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fab8-d445-0261-a085" name="C002 Galor Command Group" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="f8fd-4496-9412-6c4b" name="Galor Command Group" hidden="false" collective="false" import="true" targetId="c11e-f0e1-e7d1-7b97" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="0.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+        <cost name=" Maquis Vessels" typeId="c425-a2d1-bea1-90f5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="c11e-f0e1-e7d1-7b97" name="Galor Command Group" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true">
+      <categoryLinks>
+        <categoryLink id="0080-0371-ce94-fdd8" name="Squadron" hidden="false" targetId="6f55-30dd-f5a1-bd94" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4d8e-4e32-d68f-558b" name="Galor Type-3 Attack Cruiser" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c782-f283-aa0a-7125" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="725d-445b-fa7a-d0c8" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="75bc-e7c4-a330-0eb3" name="C002 Galor Type-3 Attack Cruiser" publicationId="d568-6405-711b-fe39" hidden="false" typeId="c705-d7dd-a82d-351a" typeName="Command Ship">
+              <characteristics>
+                <characteristic name="FPV" typeId="b15c-659d-6359-9f2d">54</characteristic>
+                <characteristic name="S-f" typeId="979e-eda9-a4eb-6d90">2</characteristic>
+                <characteristic name="S-s" typeId="bc62-190a-f876-561e">1</characteristic>
+                <characteristic name="S-a" typeId="463c-6ba7-be9b-4259">1</characteristic>
+                <characteristic name="PW-f" typeId="c327-700e-24db-e855">RRB</characteristic>
+                <characteristic name="PW-s" typeId="6885-a315-01d2-4780">B</characteristic>
+                <characteristic name="PW-a" typeId="0fe0-ac34-96e2-ed5e">-</characteristic>
+                <characteristic name="FW" typeId="05c6-50c4-dee3-2f30">B</characteristic>
+                <characteristic name="Com" typeId="c8d6-eeae-e3a7-0ef9">1</characteristic>
+                <characteristic name="Sqd" typeId="0da3-1eb0-f88d-7b74">1</characteristic>
+                <characteristic name="Eng" typeId="8f0b-8fdb-123e-3fa0">2</characteristic>
+                <characteristic name="Hull" typeId="b72a-22e2-55bc-83f6">5</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="a298-6132-acc7-08d3" name="Speed 1" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">1</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">II</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139"/>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac"/>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+            <profile id="3a7c-f8ba-71e9-1a6b" name="Speed 2" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">2</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">II</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139">I</characteristic>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac"/>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+            <profile id="342f-21b5-c142-16d3" name="Speed 3" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">3</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">I</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139">I</characteristic>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac">-</characteristic>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="dd71-796f-4f52-6a81" name="Galor-3: Heavy Spiral Wave Disruptor" publicationId="d568-6405-711b-fe39" hidden="false">
+              <description>Once per turn, while attacking, spend an Evade token to change 1 Red die to a face with a Critical icon or 2 Hit icons.</description>
+            </rule>
+            <rule id="b85d-5edd-14d1-66ce" name="Galor-3: Cardassian Training" publicationId="d568-6405-711b-fe39" hidden="false">
+              <description>Before you reveal a Command, you may change that command to a Concentrate Fire command.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="4078-34ff-559a-bc27" name="Token - Evade" hidden="false" targetId="90bf-4a21-6625-9bc4" type="profile"/>
+            <infoLink id="5802-8917-b497-5045" name="Token - Brace" hidden="false" targetId="182f-f06a-b7f9-8ed3" type="profile"/>
+            <infoLink id="d49c-021b-2ce0-22d3" name="Token - Redirect" hidden="false" targetId="000a-d096-902d-b85a" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0623-8dba-5ea1-c6ef" name="Command Ships" hidden="false" targetId="e25f-7b26-c6de-9112" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="54.0"/>
+            <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="4.0"/>
+            <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+            <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+            <cost name=" Maquis Vessels" typeId="c425-a2d1-bea1-90f5" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="357e-5652-1bbf-11e6" name="Fleet Ships" hidden="false" collective="false" import="true">
+          <comment>0-2 Destroyer
+0-2 Frigate</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7fd-c250-4b4d-648b" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0802-d0d3-1d80-bb6e" name="0-2 Frigates" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0173-e4fb-f94e-992b" type="max"/>
+                <constraint field="selections" scope="31ff-f146-de31-0b56" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c445-c8ca-5085-af33" type="max"/>
+                <constraint field="selections" scope="3c88-532f-892c-b329" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d49d-33e6-13dc-84e6" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0bae-af3f-be7d-81b6" name="Groumall" hidden="false" collective="false" import="true" targetId="8a48-c6ec-87bb-8a5b" type="selectionEntry">
+                  <comment>Frigate</comment>
+                </entryLink>
+                <entryLink id="6b97-8889-a99f-e39c" name="Hideki Class" hidden="false" collective="false" import="true" targetId="2fd1-e8d5-03f3-1e33" type="selectionEntry">
+                  <comment>Frigate</comment>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7245-4c23-1838-1763" name="Keldon Command Group" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true">
+      <categoryLinks>
+        <categoryLink id="cc9e-822b-87f8-114c" name="Squadron" hidden="false" targetId="6f55-30dd-f5a1-bd94" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8449-c817-9a63-3029" name="Keldon Class Heavy Cruiser" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="def4-25b5-de5a-7bd5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5646-6686-eced-d53b" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="bebd-7c6b-5391-c503" name="C001 Keldon-Class Heavy Cruiser" publicationId="d568-6405-711b-fe39" hidden="false" typeId="c705-d7dd-a82d-351a" typeName="Command Ship">
+              <characteristics>
+                <characteristic name="FPV" typeId="b15c-659d-6359-9f2d">65</characteristic>
+                <characteristic name="S-f" typeId="979e-eda9-a4eb-6d90">3</characteristic>
+                <characteristic name="S-s" typeId="bc62-190a-f876-561e">2</characteristic>
+                <characteristic name="S-a" typeId="463c-6ba7-be9b-4259">1</characteristic>
+                <characteristic name="PW-f" typeId="c327-700e-24db-e855">RRKK
+</characteristic>
+                <characteristic name="PW-s" typeId="6885-a315-01d2-4780">RK</characteristic>
+                <characteristic name="PW-a" typeId="0fe0-ac34-96e2-ed5e">RR</characteristic>
+                <characteristic name="FW" typeId="05c6-50c4-dee3-2f30">BK</characteristic>
+                <characteristic name="Com" typeId="c8d6-eeae-e3a7-0ef9">2</characteristic>
+                <characteristic name="Sqd" typeId="0da3-1eb0-f88d-7b74">1</characteristic>
+                <characteristic name="Eng" typeId="8f0b-8fdb-123e-3fa0">4</characteristic>
+                <characteristic name="Hull" typeId="b72a-22e2-55bc-83f6">5</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ffad-f100-3183-77c4" name="Speed 1" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">1</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">II</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139"/>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac"/>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+            <profile id="f15f-5b7f-95a0-aec5" name="Speed 2" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">2</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">I</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139">I</characteristic>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac"/>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="1e85-3d35-00c1-556b" name="Keldon: Cardassian Training" publicationId="d568-6405-711b-fe39" hidden="false">
+              <description>Before you reveal a Command, you may change that command to a Concentrate Fire command.</description>
+            </rule>
+            <rule id="c58b-60ef-1c46-d1e0" name="Keldon: Veteran Crew" publicationId="d568-6405-711b-fe39" hidden="false">
+              <description>You may be assigned up to 4 Command Tokens.	</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="16a0-93e1-503d-0815" name="Token - Evade" hidden="false" targetId="90bf-4a21-6625-9bc4" type="profile"/>
+            <infoLink id="5752-c672-4b78-c687" name="Token - Brace" hidden="false" targetId="182f-f06a-b7f9-8ed3" type="profile"/>
+            <infoLink id="6897-f37a-cd7a-12b9" name="Token - Redirect" hidden="false" targetId="000a-d096-902d-b85a" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2876-4723-d888-2d63" name="Command Ships" hidden="false" targetId="e25f-7b26-c6de-9112" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="65.0"/>
+            <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="5.0"/>
+            <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+            <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+            <cost name=" Maquis Vessels" typeId="c425-a2d1-bea1-90f5" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7bd1-fd2d-1a5d-3b39" name="Fleet Ships" hidden="false" collective="false" import="true">
+          <comment>0-2 Destroyer
+0-2 Frigate</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da2f-c7b2-5838-1f3b" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="dc95-38c9-fa78-3dc7" name="0-2 Frigates" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50ae-fade-2806-c984" type="max"/>
+                <constraint field="selections" scope="31ff-f146-de31-0b56" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8615-3d9b-a4d3-46db" type="max"/>
+                <constraint field="selections" scope="3c88-532f-892c-b329" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f87d-8a5b-d30f-7845" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="df87-25ff-d312-15f4" name="Groumall" hidden="false" collective="false" import="true" targetId="8a48-c6ec-87bb-8a5b" type="selectionEntry">
+                  <comment>Frigate</comment>
+                </entryLink>
+                <entryLink id="8e31-6a51-e8a2-8a1f" name="Hideki Class" hidden="false" collective="false" import="true" targetId="2fd1-e8d5-03f3-1e33" type="selectionEntry">
+                  <comment>Frigate</comment>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5c2f-b492-5104-e67e" name="0-2 Destroyers" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9751-9a47-3ed1-9d5f" type="max"/>
+                <constraint field="selections" scope="31ff-f146-de31-0b56" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9559-7536-e0c8-9054" type="max"/>
+                <constraint field="selections" scope="3c88-532f-892c-b329" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8672-d801-65cf-bcc6" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2c70-b716-fb7f-afd6" name="Galor Type-1" hidden="false" collective="false" import="true" targetId="9b4e-63e8-7786-6caa" type="selectionEntry">
+                  <comment>Destroyer</comment>
+                </entryLink>
+                <entryLink id="46bf-bc0e-b39a-f86f" name="Norin" hidden="false" collective="false" import="true" targetId="ff5b-04f3-67cf-ffbb" type="selectionEntry">
+                  <comment>Destroyer</comment>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

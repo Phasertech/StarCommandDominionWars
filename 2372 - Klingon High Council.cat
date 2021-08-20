@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="8af6-fea3-4e74-eee1" name="2372 - Klingon High Council" revision="1" battleScribeVersion="2.03" authorName="Thomas McWay-Wozencraft" library="false" gameSystemId="7f04-37b4-1aa9-44d7" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry id="44c3-9050-abd8-df4b" name="Subjugation Fleet" hidden="false">
+      <constraints>
+        <constraint field="4bd3-4e01-737b-5f55" scope="44c3-9050-abd8-df4b" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="012c-c420-4299-ce1d" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5094-ccc7-565a-3856" name="Squadron" hidden="false" targetId="6f55-30dd-f5a1-bd94" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e555-fe3a-51cf-7e4b" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink id="16d3-e5be-d5ea-e795" name="K001 Negh&apos;Var Command Group" hidden="false" collective="false" import="true" targetId="6cb1-45dc-98d4-9c61" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fd70-d971-32bc-5aee" name="Squadron" hidden="false" targetId="6f55-30dd-f5a1-bd94" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="06a0-460a-0796-a931" name="K002 K&apos;tinga Command Group" hidden="false" collective="false" import="true" targetId="b781-7306-bcb3-c835" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8c51-77e5-ab05-3c04" name="New CategoryLink" hidden="false" targetId="6f55-30dd-f5a1-bd94" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="6cb1-45dc-98d4-9c61" name="K001 Negh&apos;Var Command Group" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="67e3-2716-1330-4600" name="Negh&apos;Var Command Group" hidden="false" collective="false" import="true" targetId="5ed1-56a5-09f5-13a3" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="0.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b781-7306-bcb3-c835" name="K002 K&apos;tinga Command Group" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="5091-29bc-73ca-326f" name="K&apos;Tinga Command Group" hidden="false" collective="false" import="true" targetId="d348-cd53-bb3b-ebde" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="0.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4885-6b80-d9ef-3965" name="KF001 D5" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="ed6f-74ce-d7ad-81cc" name="KF001 D5 Assault Cruiser" publicationId="d568-6405-711b-fe39" hidden="false" typeId="acea-0d61-6fce-95dd" typeName="Fleet Ship">
+          <characteristics>
+            <characteristic name="FPV" typeId="9722-673d-f4c8-90cb">20</characteristic>
+            <characteristic name="Hull" typeId="30e5-8457-0f9b-1171">7</characteristic>
+            <characteristic name="Speed" typeId="1a82-bb21-c9be-ba7a">4</characteristic>
+            <characteristic name="Primary" typeId="7e65-134e-af94-ac91">BB</characteristic>
+            <characteristic name="Anti-Fleet" typeId="a398-d1c7-fb65-0b7d">RBB</characteristic>
+            <characteristic name="Keywords" typeId="4ee2-6a1d-0143-7175">Assault, Rogue</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2b98-44fd-1ab7-72a5" name="Assault" hidden="false" targetId="12cb-e3a5-a830-399d" type="profile"/>
+        <infoLink id="848e-e325-7772-3dc5" name="Rogue" hidden="false" targetId="41da-6832-7da2-605e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1264-b4da-c1c8-e812" name="Destroyer" hidden="false" targetId="d99d-6a05-8fe9-71a1" primary="true"/>
+        <categoryLink id="9fe9-840b-2ac9-449b" name="Fleet" hidden="false" targetId="6aca-d485-4bab-c1e3" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="20.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="2.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b4ae-f3a1-fede-b610" name="KF004 D5 Battlecruiser" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1601-756e-8309-3dfe" name="KF004 D5 Battlecruiser" publicationId="d568-6405-711b-fe39" hidden="false" typeId="9247-a0c9-28c2-9bb6" typeName="Fleet Ship - Advanced">
+          <characteristics>
+            <characteristic name="FPV" typeId="4aa2-397f-6c37-396a">23</characteristic>
+            <characteristic name="Hull" typeId="ce6c-5901-d614-10b0">7</characteristic>
+            <characteristic name="Speed" typeId="c3b7-76a1-f267-6678">4</characteristic>
+            <characteristic name="Primary" typeId="45b6-243e-a701-6ed9">R</characteristic>
+            <characteristic name="Anti-Fleet" typeId="4e8c-eac2-01bf-5679">BBBB</characteristic>
+            <characteristic name="Keywords" typeId="7fd8-4f0b-fd4e-35f7">Assault, Rogue</characteristic>
+            <characteristic name="Def. Tokens" typeId="2073-d890-2741-05dc">Brace</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0ddd-c152-3db6-a3e2" name="D5 Battlecruiser - Boarding Strikes" publicationId="d568-6405-711b-fe39" hidden="false">
+          <description>When an enemy Fleet Ship with Intel or Relay at Distance 1 Activates, it suffers 1 Damage.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="285b-5e0e-8e9a-04bc" name="Assault" hidden="false" targetId="12cb-e3a5-a830-399d" type="profile"/>
+        <infoLink id="87c2-6485-652e-bbc8" name="Rogue" hidden="false" targetId="41da-6832-7da2-605e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7433-877a-81c6-18ef" name="Fleet" hidden="false" targetId="6aca-d485-4bab-c1e3" primary="false"/>
+        <categoryLink id="3afb-437f-67f8-dd04" name="Frigate" hidden="false" targetId="777b-69d1-0673-ebf6" primary="true"/>
+        <categoryLink id="56ba-0823-b1b1-dcb2" name="Advanced" hidden="false" targetId="3c88-532f-892c-b329" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="23.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="2.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f582-e2f9-fa96-1363" name="KF003 K&apos;Vort" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="49b7-c765-a763-36bb" name="KF003 K&apos;Vort Strike Cruiser" hidden="false" typeId="acea-0d61-6fce-95dd" typeName="Fleet Ship">
+          <characteristics>
+            <characteristic name="FPV" typeId="9722-673d-f4c8-90cb">14</characteristic>
+            <characteristic name="Hull" typeId="30e5-8457-0f9b-1171">4</characteristic>
+            <characteristic name="Speed" typeId="1a82-bb21-c9be-ba7a">4</characteristic>
+            <characteristic name="Primary" typeId="7e65-134e-af94-ac91">RR</characteristic>
+            <characteristic name="Anti-Fleet" typeId="a398-d1c7-fb65-0b7d">BBBB</characteristic>
+            <characteristic name="Keywords" typeId="4ee2-6a1d-0143-7175">Swarm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2960-5f6f-0ad1-b839" name="Cloak" hidden="false" targetId="e8e0-e58e-dfb9-280b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9e94-0dd8-cd74-4c05" name="Fleet" hidden="false" targetId="6aca-d485-4bab-c1e3" primary="false"/>
+        <categoryLink id="d2c0-1fbd-d1ae-0371" name="Frigate" hidden="false" targetId="777b-69d1-0673-ebf6" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="14.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="1.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0862-34e7-7271-6dda" name="KF002 D6" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="f21d-3972-f734-d080" name="KF002 D6 Escort Cruiser" publicationId="d568-6405-711b-fe39" hidden="false" typeId="acea-0d61-6fce-95dd" typeName="Fleet Ship">
+          <characteristics>
+            <characteristic name="FPV" typeId="9722-673d-f4c8-90cb">12</characteristic>
+            <characteristic name="Hull" typeId="30e5-8457-0f9b-1171">5</characteristic>
+            <characteristic name="Speed" typeId="1a82-bb21-c9be-ba7a">3</characteristic>
+            <characteristic name="Primary" typeId="7e65-134e-af94-ac91">K</characteristic>
+            <characteristic name="Anti-Fleet" typeId="a398-d1c7-fb65-0b7d">RBB</characteristic>
+            <characteristic name="Keywords" typeId="4ee2-6a1d-0143-7175">Escort, Swarm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="01cc-f8ad-faf1-b5d1" name="Swarm" hidden="false" targetId="e8e0-e58e-dfb9-280b" type="profile"/>
+        <infoLink id="5976-09ce-b43d-72c6" name="Escort" hidden="false" targetId="c3d2-3f48-f3e3-260d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e287-31b9-02cb-edb8" name="Destroyer" hidden="false" targetId="d99d-6a05-8fe9-71a1" primary="true"/>
+        <categoryLink id="f01e-0bf4-b042-d162" name="Fleet" hidden="false" targetId="6aca-d485-4bab-c1e3" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="12.0"/>
+        <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="1.0"/>
+        <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+        <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="5ed1-56a5-09f5-13a3" name="Negh&apos;Var Command Group" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true">
+      <categoryLinks>
+        <categoryLink id="b316-a681-5826-4be3" name="Squadron" hidden="false" targetId="6f55-30dd-f5a1-bd94" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="352c-36c2-6ea3-df1c" name="Negh&apos;Var Assault Battlecruiser" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed37-dfd7-e5b3-7979" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45f7-e4e6-a63c-7b10" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b733-ff90-9045-d41e" name="K001 Negh&apos;Var Assault Battlecruiser" publicationId="d568-6405-711b-fe39" hidden="false" typeId="c705-d7dd-a82d-351a" typeName="Command Ship">
+              <characteristics>
+                <characteristic name="FPV" typeId="b15c-659d-6359-9f2d">103</characteristic>
+                <characteristic name="S-f" typeId="979e-eda9-a4eb-6d90">3</characteristic>
+                <characteristic name="S-s" typeId="bc62-190a-f876-561e">3</characteristic>
+                <characteristic name="S-a" typeId="463c-6ba7-be9b-4259">2</characteristic>
+                <characteristic name="PW-f" typeId="c327-700e-24db-e855">RRRBBK</characteristic>
+                <characteristic name="PW-s" typeId="6885-a315-01d2-4780">RRRB</characteristic>
+                <characteristic name="PW-a" typeId="0fe0-ac34-96e2-ed5e">RB</characteristic>
+                <characteristic name="FW" typeId="05c6-50c4-dee3-2f30">R</characteristic>
+                <characteristic name="Com" typeId="c8d6-eeae-e3a7-0ef9">3</characteristic>
+                <characteristic name="Sqd" typeId="0da3-1eb0-f88d-7b74">3</characteristic>
+                <characteristic name="Eng" typeId="8f0b-8fdb-123e-3fa0">3</characteristic>
+                <characteristic name="Hull" typeId="b72a-22e2-55bc-83f6">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d69d-352a-14b1-a0e4" name="Speed 1" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">1</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">I</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139"/>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac"/>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+            <profile id="b284-ea52-101c-6f3d" name="Speed 2" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">2</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">I</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139">I</characteristic>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac"/>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+            <profile id="3ff8-ec8d-f36d-bcf3" name="Speed 3" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">3</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">-</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139">II</characteristic>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac">I</characteristic>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="ec96-b5c4-1d28-e4b6" name="Negh&apos;Var: Klingon Boarding Parties" publicationId="d568-6405-711b-fe39" hidden="false">
+              <description>Once per game, discard a Squadron Dial or Token to choose an enemy Command Ship at Close Range. Then, spend up to 3 of that Ship&apos;s Defense Tokens.</description>
+            </rule>
+            <rule id="1ead-b51a-99b9-f4d8" name="Negh&apos;Var: Cloaked Fleet" publicationId="d568-6405-711b-fe39" hidden="false">
+              <description>Before deploying fleets, set aside 3 Fleet Ships. When you would activate a Fleet Ship with a Squadron command, you may instead set up one of the Ships you set aside with this Ability. That ship may immediately move and attack.	</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="a3c0-825f-ca3c-ee89" name="Token - Salvo" hidden="false" targetId="a8ab-c8b8-eaf1-d9a0" type="profile"/>
+            <infoLink id="f8e0-4711-7de0-92d9" name="Token - Brace" hidden="false" targetId="182f-f06a-b7f9-8ed3" type="profile"/>
+            <infoLink id="a980-781d-3b37-1431" name="Token - Redirect" hidden="false" targetId="000a-d096-902d-b85a" type="profile"/>
+            <infoLink id="674b-fdef-d091-5174" name="Token - Salvo" hidden="false" targetId="a8ab-c8b8-eaf1-d9a0" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1aec-f85e-01d3-ebad" name="Command Ships" hidden="false" targetId="e25f-7b26-c6de-9112" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="103.0"/>
+            <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="9.0"/>
+            <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+            <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5452-8b88-fa88-6213" name="Fleet Ships" hidden="false" collective="false" import="true">
+          <comment>0-2 Destroyer
+0-2 Frigate</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3818-ee14-fb53-8814" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="329a-1ef5-a3a2-d98e" name="1-4 Destroyers" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f51-3dc3-2cca-57ef" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ef-2ce0-9d80-3772" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="a9a5-0ea7-7f75-7f08" name="KF001 D5" hidden="false" collective="false" import="true" targetId="4885-6b80-d9ef-3965" type="selectionEntry">
+                  <comment>Frigate</comment>
+                </entryLink>
+                <entryLink id="39e2-ae15-73b7-a5fc" name="KF004 D5 Battlecruiser" hidden="false" collective="false" import="true" targetId="b4ae-f3a1-fede-b610" type="selectionEntry">
+                  <comment>Frigate</comment>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a101-aec2-365f-7b42" name="0-4 Frigates" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac06-fb87-f633-f272" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="5a45-60f2-370c-4ece" name="KF002 D6" hidden="false" collective="false" import="true" targetId="0862-34e7-7271-6dda" type="selectionEntry">
+                  <comment>Frigate</comment>
+                </entryLink>
+                <entryLink id="b36a-b0a9-fedc-9ab3" name="KF003 K&apos;Vort" hidden="false" collective="false" import="true" targetId="f582-e2f9-fa96-1363" type="selectionEntry">
+                  <comment>Frigate</comment>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d348-cd53-bb3b-ebde" name="K&apos;Tinga Command Group" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true">
+      <categoryLinks>
+        <categoryLink id="6cd0-10c8-c539-3d05" name="Squadron" hidden="false" targetId="6f55-30dd-f5a1-bd94" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="51e7-cfdc-8983-7d0e" name="K&apos;tinga Class Battlecruiser" publicationId="d568-6405-711b-fe39" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5357-b4f2-0e9e-dc7c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ba9-633d-2a41-46ae" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b2cf-f924-a2b2-08e4" name="K002 K&apos;tinga Class Battlecruiser" publicationId="d568-6405-711b-fe39" hidden="false" typeId="c705-d7dd-a82d-351a" typeName="Command Ship">
+              <characteristics>
+                <characteristic name="FPV" typeId="b15c-659d-6359-9f2d">63</characteristic>
+                <characteristic name="S-f" typeId="979e-eda9-a4eb-6d90">3</characteristic>
+                <characteristic name="S-s" typeId="bc62-190a-f876-561e">1</characteristic>
+                <characteristic name="S-a" typeId="463c-6ba7-be9b-4259">2</characteristic>
+                <characteristic name="PW-f" typeId="c327-700e-24db-e855">RRR</characteristic>
+                <characteristic name="PW-s" typeId="6885-a315-01d2-4780">R</characteristic>
+                <characteristic name="PW-a" typeId="0fe0-ac34-96e2-ed5e">-</characteristic>
+                <characteristic name="FW" typeId="05c6-50c4-dee3-2f30">BK</characteristic>
+                <characteristic name="Com" typeId="c8d6-eeae-e3a7-0ef9">1</characteristic>
+                <characteristic name="Sqd" typeId="0da3-1eb0-f88d-7b74">1</characteristic>
+                <characteristic name="Eng" typeId="8f0b-8fdb-123e-3fa0">3</characteristic>
+                <characteristic name="Hull" typeId="b72a-22e2-55bc-83f6">5</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ff45-8e73-bc1f-d690" name="Speed 1" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">1</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">II</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139"/>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac"/>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+            <profile id="b1a8-868e-6f2e-ee5a" name="Speed 2" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">2</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">I</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139">I</characteristic>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac"/>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+            <profile id="c7dd-f9da-041c-a52e" name="Speed 3" hidden="false" typeId="eacb-961e-17de-eca7" typeName="Turn Chart">
+              <characteristics>
+                <characteristic name="Speed" typeId="b010-379d-a6b5-2f4d">3</characteristic>
+                <characteristic name="1" typeId="ca1f-78f3-4466-4d8f">I</characteristic>
+                <characteristic name="2" typeId="e376-27c5-b1f7-8139">I</characteristic>
+                <characteristic name="3" typeId="85dc-8b5b-0bc8-dfac">_</characteristic>
+                <characteristic name="4" typeId="8992-1f83-63cd-5427"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="fad4-9eea-8f6b-4da4" name="K&apos;tinga: Cloaked Fleet" publicationId="d568-6405-711b-fe39" hidden="false">
+              <description>Before deploying fleets, set aside 3 Fleet Ships. When you would activate a Fleet Ship with a Squadron command, you may instead set up one of the Ships you set aside with this Ability. That ship may immediately move and attack.	</description>
+            </rule>
+            <rule id="3e7e-1313-e5ea-4aa4" name="K&apos;tinga: K-29 Pursuit Torpedo" publicationId="d568-6405-711b-fe39" hidden="false">
+              <description>Special Critical [Any]: The first 2 Damage cards dealt to the Defender by this attack are dealt faceup.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="c511-701b-27b3-4f81" name="Token - Evade" hidden="false" targetId="90bf-4a21-6625-9bc4" type="profile"/>
+            <infoLink id="b192-d356-fd8d-c74f" name="Token - Brace" hidden="false" targetId="182f-f06a-b7f9-8ed3" type="profile"/>
+            <infoLink id="4bc9-4a6c-6511-18f6" name="Token - Redirect" hidden="false" targetId="000a-d096-902d-b85a" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="be1a-f6d6-3645-0fd0" name="Command Ships" hidden="false" targetId="e25f-7b26-c6de-9112" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="FPV" typeId="0ef6-37f2-9cba-a83c" value="63.0"/>
+            <cost name="CP" typeId="ab44-9561-6dfb-efbc" value="5.0"/>
+            <cost name="RP" typeId="65fa-9ae5-3e7c-52d2" value="0.0"/>
+            <cost name=" Advanced Ships" typeId="4bd3-4e01-737b-5f55" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3993-f380-cf1e-96a8" name="Fleet Ships" hidden="false" collective="false" import="true">
+          <comment>0-2 Destroyer
+0-2 Frigate</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c10-ea74-e437-bbdd" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="4c10-d081-64f6-a51b" name="0-2 Frigates" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e65-8817-bea4-3a64" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="e9ae-f09b-c7c9-245e" name="KF002 D6" hidden="false" collective="false" import="true" targetId="0862-34e7-7271-6dda" type="selectionEntry">
+                  <comment>Frigate</comment>
+                </entryLink>
+                <entryLink id="9371-24a7-b04b-0efa" name="KF003 K&apos;Vort" hidden="false" collective="false" import="true" targetId="f582-e2f9-fa96-1363" type="selectionEntry">
+                  <comment>Frigate</comment>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a49e-d706-1479-8a71" name="0-1 Destroyers" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e76-ed7e-08f6-369a" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="3bf6-576b-89a6-a4a5" name="KF001 D5" hidden="false" collective="false" import="true" targetId="4885-6b80-d9ef-3965" type="selectionEntry">
+                  <comment>Destroyer</comment>
+                </entryLink>
+                <entryLink id="e22c-acb2-a9c8-c742" name="KF004 D5 Battlecruiser" hidden="false" collective="false" import="true" targetId="b4ae-f3a1-fede-b610" type="selectionEntry">
+                  <comment>Destroyer</comment>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
